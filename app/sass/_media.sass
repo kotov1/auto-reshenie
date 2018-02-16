@@ -1,31 +1,456 @@
 @import "vars"
 
 
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1042px)
+	.block-3
+		.block-3-form input, .form-button
+			max-width: 200px
+
+
+@media only screen and (max-width : 991px)
+
+	.header, .footer
+		&-cell-1
+			width: 36%
+		&-nav
+			min-height: 50px
+			padding: 0
+			&-list
+				justify-content: center
+		&-cell-2
+			width: 100%
+			right: 0
+		&-cell-3
+			width: 36%
+			float: right
+			left: 0
+
+
+	.block-1
+		&-services
+			width: 65%
+
+		&-slider-wrap
+			left: 42%
+			transform: translateX(-50%)
+			bottom: 200px
+
+
+	.block-2
+		padding-bottom: 0
+		&-cell
+			width: 50%
+			text-align: center
+		&-content
+			margin-bottom: 50px
+			&-title
+				padding: 0 65px
+		&-button
+			max-width: 213px
+
+
+	.block-3
+		&-cell-1, &-cell-2
+			width: 50%
+
+		&-info
+			padding: 0
+			text-align: center
+
+		.block-3-form
+			max-width: 80%
+			margin: 0 auto
+
+		.label-name, .label-tel
+			margin-right: 0
+			margin-bottom: 20px
+
+		.block-3-form input, .form-button
+			max-width: 100%
+			width: 100%
+		.block-3-form input
+			margin-bottom: 20px
+
+
+
+	.block-5
+		&-cell
+			width: 100%
+
+		&-button
+			float: none
+			width: 100%
+			&-bid
+				margin-bottom: 15px
+
+
+
+
+	.block-6
+		&::after
+			display: none
+		&-cell
+		&-item
+			&-text
+				br
+					display: none
+
+
+
+	.block-8
+		&-cell
+			width: 50%
+			margin-bottom: 30px
+			&:last-child
+				float: none
+				margin-left: auto
+				margin-right: auto
+
+
+
+	.block-9
+		&-address-wrap
+			padding: 20px 10px 8px
+		&-cell
+			padding: 0 10px
+		&-address
+			&::before
+				right: 25px
+
+
+
+	.footer
+		&-nav-list
+			text-align: center
+		.contacts
+			padding-top: 18px
+
+
 
 	/**/
 
 
 
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 767px)
 
-	/**/
+	.header
+		&-cell-1
+			width: 39%
+		&-cell-2
+			width: 100%
+		&-cell-3
+			width: 46%
+			max-width: 251px
+
+	.block-1
+		.cell
+			width: 100%
+			float: none
+			right: auto
+			left: auto
+
+		&-services
+			width: auto
+			li
+				display: block
+				width: 235px
+				margin-left: auto
+				margin-right: auto
+
+		&-img-wrap
+			margin: 30px auto 0
+			max-width: 360px
+
+		&-slider-wrap
+			position: relative
+			transform: none
+			bottom: 0
+			left: auto
+			right: auto
+			max-width: 205px
+			margin: 15px auto 0
+
+
+	.block-2
+		&-cell
+		&-content
+			margin-bottom: 30px
+			&-title
+				min-height: auto
+				padding: 0
+
+
+	.float-r
+		float: none
+	.float-l
+		float: none
+
+	.block-text
+		.img-wrap
+			margin: 0 auto 20px
 
 
 
-@media only screen and (max-width : 768px)
+
+	.block-6
+		background: #208ea5
+		&-cell
+			width: 100%
+			float: none
+		&-item
+			margin-bottom: 30px
+			&-text
+				padding: 0 20%
+
+
+
+	.block-7
+		&-slider-wrap
+			padding: 0
+		.slick-7-prev
+			left: 3%
+		.slick-7-next
+			right: 3%
+	
+
+
+
+	.block-8
+		background: #208ea5
+		&-cell
+			width: 100%
+			float: none
+			margin-left: auto
+			margin-right: auto
+
+
+
+
+	.block-9
+		&-cell
+			width: 100%
+			float: none
+			padding: 0 10px
+
+
+	.footer 
+		&-cell-1
+			width: 50%
+		&-cell-2
+			width: 100%
+		&-cell-3
+			width: 50%
+			max-width: 255px
+
+		&-nav
+			padding-top: 20px
+			li
+				margin-top: 5px
+
+
 
 	/**/
 
 
 @media only screen and (max-width : 576px)
 
+
+	.header-nav
+		display: none
+		position: fixed
+		min-width: 260px
+		float: right
+		top: 80px
+		right: 20px
+		overflow-y: auto
+		overflow-x: hidden
+
+		.header-nav-list
+			display: block
+			overflow-y: auto
+	
+		li 
+			display: block
+			padding: 0
+			text-align: center
+			background-color: #208ea5
+			opacity: .9
+			border-bottom: 1px solid rgba(255,255,255,.7)
+
+		.header-nav-link
+			display: block
+			padding: 10px
+			line-height: 40px
+			text-transform: uppercase
+			transition: all .5s
+			color: #fff
+			text-decoration: none
+			&:hover
+				background-color: rgb(109, 200, 136)
+
+	.mob-menu
+		display: none
+
+
+	.header, .footer
+		&-cell-1
+			width: 100%
+			float: none
+		&-cell-2
+			width: 100%
+		&-cell-3
+			width: 100%
+			max-width: 100%
+			float: none
+		.contacts
+			max-width: 290px
+			margin: 0 auto
+			padding-top: 20px
+
+		&-nav
+			&-list
+
+	.logo
+		top: 0
+		margin: 0 auto
+
+
+	.block-2
+		&-cell
+			width: 100%
+			padding: 0
+			float: none
+		&-content
+			margin-bottom: 30px
+			&-title
+				min-height: auto
+				padding: 0
+
+
+	.block-3
+
+		.string
+			display: block
+
+		&-cell-1, &-cell-2
+			width: 100%
+			float: none
+
+		&-info
+			margin-bottom: 30px
+
+
+
+	.breadcrumb
+		padding: 0 10px
+		> li + li:before
+			padding: 0 3px
+
+	.block-text
+		font-size: .8888888888888889em
+
+
+
+
+	.block-5
+		&-item
+			min-height: 100px
+			padding: 0 5px
+		&-text
+			padding-left: 10px
+			font-size: 1.125em
+
+		&-buttons
+			width: 50%
+
+
+
+	.block-6
+		&-item
+			&-text
+				padding: 0 10%
+
+
+
+	.footer 
+		.string
+			display: block
+			display: flex
+			flex-direction: column
+		&-cell-1
+			order: 1
+
+		&-nav
+			padding-bottom: 20px
+
+		.copyright
+			text-align: center
+		.contacts
+			max-width: 260px
+
 	/**/
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width : 480px)
 
+
+	.block-1
+		font-size: .9em
+
+		&-img-wrap
+			max-width: 290px
+
+
+	.block-3
+		.block-3-form
+			max-width: 100%
+
+	.block-5
+		&-offer
+			font-size: 1.5em
+		&-info
+			font-size: 1em
+		&-buttons
+			width: 290px
+
+
+	.block-6
+		&-item
+			&-text
+				padding: 0 5%
+
+
+
+
+	.block-9
+		font-size: .9em
+		&-address-wrap
+			padding: 20px 0 8px
+		&-cell
+			width: 100%
+			float: none
+			padding: 0 10px
+		&-address
+			padding: 10px
+			&::before
+				top: 45%
+
+
+
 	/**/
+
+
+
+
+
+
 
 
 
@@ -37,34 +462,14 @@
 
 
 
-// @media only screen and (min-width : 320px)
+@media (min-width: 768px)
+	.wrap
+		width: 750px
 
-// 	/**/
+@media (min-width: 992px)
+	.wrap
+		width: 992px
 
-
-
-// @media only screen and (min-width : 480px)
-
-// 	/**/
-
-
-// @media only screen and (min-width : 576px)
-
-// 	/**/
-
-
-// @media only screen and (min-width : 768px)
-
-// 	/**/
-
-
-
-// @media only screen and (min-width : 992px)
-
-// 	/**/
-
-
-
-// @media only screen and (min-width : 1200px)
-
-// 	/**/
+@media (min-width: 1042px)
+	.wrap
+		width: 1042px
