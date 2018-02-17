@@ -27,6 +27,7 @@
 
 
 	.block-1
+		margin-top: 150px
 		&-services
 			width: 65%
 
@@ -142,7 +143,11 @@
 			width: 46%
 			max-width: 251px
 
+	.header
+		position: static
+
 	.block-1
+		margin-top: 0
 		.cell
 			width: 100%
 			float: none
@@ -188,6 +193,49 @@
 	.block-text
 		.img-wrap
 			margin: 0 auto 20px
+		table
+			width: 80%
+			min-width: auto
+			thead tr 
+				position: absolute
+				top: -9999em
+				left: -9999em
+
+			// tr + tr 
+			// 	margin-bottom: 1.5em
+
+
+			tr, td 
+				display: block
+				position: relative
+
+			td 
+				border: none
+				border-bottom: 0.125em solid #fece0a
+				padding-left: 50%
+				background-image: none
+				&::before 
+					content: attr(data-label)
+					display: inline-block
+					font-weight: bold
+					line-height: 1.5
+					margin-left: -95%
+					width: 100%
+					color: #000
+				&::after
+					content: ''
+
+			tr:last-child
+				td:last-child
+					border-bottom: none
+
+			.img-cell
+				display: inline-block
+				width: 100%
+				position: absolute
+				top: -2px
+				transform: translateX(-30px)
+				border: none
 
 
 
@@ -247,7 +295,8 @@
 			li
 				margin-top: 5px
 
-
+	.er404
+		font-size: .5em
 
 	/**/
 
@@ -276,6 +325,8 @@
 			background-color: #208ea5
 			opacity: .9
 			border-bottom: 1px solid rgba(255,255,255,.7)
+			&:last-child
+				border-bottom: none
 
 		.header-nav-link
 			display: block
@@ -348,6 +399,8 @@
 
 	.block-text
 		font-size: .8888888888888889em
+		table
+			width: 100%
 
 
 
@@ -388,6 +441,31 @@
 		.contacts
 			max-width: 260px
 
+
+	.modal
+		max-width: 80%
+		padding-bottom: 20px
+		&-title
+			margin-bottom: 20px
+		&-cell
+			width: 100%
+			float: none
+		&-text
+			text-align: center
+			margin-bottom: 20px
+		&-offer
+			margin-bottom: 10px
+
+		&-form
+			width: 100%
+			max-width: 300px
+			margin: 0 auto
+
+
+	.er404
+		padding-top: 5vh
+		font-size: .4em
+
 	/**/
 
 
@@ -411,6 +489,16 @@
 	.block-3
 		.block-3-form
 			max-width: 100%
+
+
+	.block-text
+		table
+			font-size: 13px
+			td
+				&::before 
+					width: 95%
+			.img-cell
+				transform: translate(-27px,-1px)
 
 	.block-5
 		&-offer
@@ -439,9 +527,31 @@
 			padding: 0 10px
 		&-address
 			padding: 10px
+		&-address-close
 			&::before
-				top: 45%
+				top: 50%
+			&-btn
+				top: -13px
+				right: -4px
 
+
+
+	.modal
+		max-width: 90%
+		&-title
+			margin-bottom: 20px
+		&-text
+			margin-bottom: 20px
+		&-offer
+			margin-bottom: 10px
+
+
+
+	.scroll-button
+		display: none !important
+
+	.call-modal-tel
+		transform: scale(.8)
 
 
 	/**/

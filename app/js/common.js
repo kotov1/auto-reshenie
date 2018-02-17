@@ -115,6 +115,28 @@ $(function() {
 
 $(function() {
 
+
+	$('.call-modal').magnificPopup({
+		items: {
+			src: '#modal',
+			closeBtnInside: true,
+			type: 'inline'
+		}
+	});
+
+	$('.call-modal-tel').magnificPopup({
+		items: {
+			src: '#modal-tel',
+			closeBtnInside: true,
+			type: 'inline'
+		}
+	});
+
+
+
+
+
+
 	$(window).scroll(function () {
 		if($(window).width() < 575 ) { 
 
@@ -150,15 +172,20 @@ $(function() {
 
 
 	
-	$(".header-nav").click(function (event) {
+	$(".header-nav-link").click(function (event) {
 
 		if( $(".header-nav").attr('href') ) {
 			event.preventDefault();
 		}
 
 		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
+			top = $(id).offset().top-100;
 		$('body,html').animate({scrollTop: top}, 1000);
+
+		if($(window).width() < 575 ){
+			$('.mob-menu').toggleClass("on");
+		}
+		
 	});
 
 
@@ -206,6 +233,124 @@ $(function() {
 	});
 
 
+
+
+
+	$(".text-img").click(function(){
+		if ($('.images-modal').hasClass('for-images-modal')){
+
+			$('.images-modal').empty().removeClass('for-images-modal');
+
+		}else{
+
+			var mfpImg = $(this).data('mfp');
+			$('.images-modal').append('<img src ='+mfpImg+'>');
+			$('.images-modal img').css({"width":"300px","margin":"0","height":"260px","display":"block"});
+
+			$('.images-modal').addClass('for-images-modal');
+		}
+	});
+
+	$(document).mouseup(function (e){
+		var div = $(".images-modal");
+		if (!div.is(e.target) && div.has(e.target).length === 0) {
+
+			$('.images-modal').empty().removeClass('for-images-modal');
+
+		}
+	});
+
+
+ 	$('.tel').mask("+7 (999) 999-99-99");	
+
+
+	$(".block-9-address-close").on("click",function(){
+		$(this).children(".block-9-address-close-btn-wrap").prepend('<span class="block-9-address-close-btn">Закрыть</span>');
+		$(this).removeClass("block-9-address-close");
+		$("img.lazy").show().lazyload();
+	});
+
+	$("body").on("click", ".block-9-address-close-btn", function(){
+		$(this).parents(".block-9-address").addClass("block-9-address-close");
+		$(this).parent(".block-9-address-close-btn-wrap").html("");
+
+	});
+
+
+
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {	
+			$('.scroll-button').fadeIn();
+		} else {
+			$('.scroll-button').fadeOut();
+		}
+	});
+
+	$('.scroll-button').click(function () {
+		$('body,html').animate({scrollTop: 0}, 500);
+		return false;
+	});	
+
+
+	$('body').copyright();
+
+
+	$(".form").submit(function(e) {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$(".form-button").text("Отправлено");
+			$(".form-button").attr("disabled","");
+			setTimeout(function() {
+				th.trigger("reset");
+				$(".form-button").text("Заказать звонок");
+				$(".form-button").removeAttr("disabled");
+			}, 3000);
+		});
+		return false;
+	});	
+
+	$(".modal-form").submit(function(e) {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$(".modal-1-btn").text("Отправлено");
+			$(".modal-1-btn").attr("disabled","");
+			setTimeout(function() {
+				th.trigger("reset");
+				$.magnificPopup.close();
+				$(".modal-1-btn").text("Заказать звонок");
+				$(".modal-1-btn").removeAttr("disabled");
+			}, 3000);
+		});
+		return false;
+	});	
+
+	$(".modal-form-tel").submit(function(e) {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$(".modal-2-btn").text("Отправлено");
+			$(".modal-2-btn").attr("disabled","");
+			setTimeout(function() {
+				th.trigger("reset");
+				$.magnificPopup.close();
+				$(".modal-2-btn").text("Заказать звонок");
+				$(".modal-2-btn").removeAttr("disabled");
+			}, 3000);
+		});
+		return false;
+	});	
 
 
 });

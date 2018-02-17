@@ -41,7 +41,7 @@
 						<div class="contacts clear">
 							<div class="tel">Телефон: <noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex></div>
 							<div class="whatsapp">WhatsApp: <noindex><a href="whatsapp://send?phone=+74955555555">+7 (495) 555-55-55</a></noindex></div>
-							<button class="button header-button">Заказать звонок</button>
+							<button class="button header-button call-modal">Заказать звонок</button>
 						</div>
 					</div>
 
@@ -50,7 +50,7 @@
 						<nav class="header-nav">
 							<ul class="header-nav-list">
 								<li><span class="header-nav-link">О Компании</span></li>
-								<li><a href="#" class="header-nav-link">Техцентры</a></li>
+								<li><a href="#block-9" class="header-nav-link">Техцентры</a></li>
 								<li><span class="header-nav-link">Контакты</span></li>
 							</ul>
 						</nav>
@@ -75,7 +75,7 @@
 								<li>Гарантия до 3-х лет</li>
 							</ul>
 							<div class="block-1-price">9990 <span class="uppercase">руб.</span></div>
-							<button class="button block-1-button">сделайте заказ со скидкой 5%</button>	
+							<button class="button block-1-button call-modal">сделайте заказ со скидкой 5%</button>	
 						</div>
 					</div>	
 
@@ -122,7 +122,7 @@
 						<div class="block-2-content">
 							<div class="block-2-content-title">Ремонт АКПП</div>
 							<div class="block-2-content-price">от <span class="accent">9900</span> рублей</div>
-							<button class="button block-2-button">заказать услугу</button>
+							<button class="button block-2-button call-modal">заказать услугу</button>
 						</div>
 					</div>
 					<div class="cell block-2-cell">
@@ -132,7 +132,7 @@
 						<div class="block-2-content">
 							<div class="block-2-content-title">Диагностика АКПП</div>
 							<div class="block-2-content-price">от <span class="accent">990</span> рублей</div>
-							<button class="button block-2-button">заказать услугу</button>
+							<button class="button block-2-button call-modal">заказать услугу</button>
 						</div>
 					</div>
 					<div class="cell block-2-cell">
@@ -142,7 +142,7 @@
 						<div class="block-2-content">
 							<div class="block-2-content-title">Замена масла АКПП</div>
 							<div class="block-2-content-price">от <span class="accent">990</span> рублей</div>
-							<button class="button block-2-button">заказать услугу</button>
+							<button class="button block-2-button call-modal">заказать услугу</button>
 						</div>
 					</div>
 					<div class="cell block-2-cell">
@@ -152,7 +152,7 @@
 						<div class="block-2-content">
 							<div class="block-2-content-title">Замена АКПП</div>
 							<div class="block-2-content-price">от <span class="accent">7900</span> рублей</div>
-							<button class="button block-2-button">заказать услугу</button>
+							<button class="button block-2-button call-modal">заказать услугу</button>
 						</div>
 					</div>
 				</div>
@@ -181,7 +181,7 @@
 								<input type="hidden" name="form_subject" value="Нужна консультация">
 
 								<label class="label-name"><input type="text" name="Имя" pattern="[A-Za-zА-Яа-яЁё]{1,}" placeholder="Введите имя" required></label>
-								<label class="label-tel"><input type="tel" name="Телефон" data-mask="+7(000)000-00-00" placeholder="Введите телефон" required></label>
+								<label class="label-tel"><input type="tel" class="tel" name="Телефон"  placeholder="Введите телефон" required></label>
 								<button type="submit" class="button form-button">Заказать звонок</button>
 
 							</form>
@@ -221,7 +221,7 @@
 
 				<div class="text clear">
 					<div class="mfp-image img-wrap img-wrap-sm float-l">
-						<img src="" data-mfp="img/test.jpg" class="text-img responsive-img" alt="image">
+						<img src="img/test.jpg" data-mfp="img/test.jpg" class="text-img responsive-img" alt="image">
 					</div>
 					<p>С помощью наших экспертов вы легко подберете удобный центр, где вашу автоматическую кпп отремонтируют мастера своего дела. Они дадут гарантию на выполненные работы, так что вы будете уверены в надежности проведенных мероприятий.</p>
 					<p>В Москве последнее время появляется все больше автосервисов, в которых готовы
@@ -300,8 +300,8 @@
 			<div class="block-5-offer">Сэкономьте на услугах 20%!</div>
 			<div class="block-5-info">Согласуйте предварительные сроки и получите скидку на следующий заказ 20%!</div>
 			<div class="block-5-buttons clear">
-				<button class="button block-5-button block-5-button-bid">оставить заявку</button>
-				<button class="button block-5-button block-5-button-call">обратный звонок</button>
+				<button class="button block-5-button block-5-button-bid call-modal">оставить заявку</button>
+				<button class="button block-5-button block-5-button-call call-modal">обратный звонок</button>
 			</div>
 			</div>
 		</div>
@@ -431,14 +431,14 @@
 				</div>
 
 				<div class="block-8-button-wrap">
-					<button class="button block-8-button">Подробнее о компании</button>
+					<button class="button block-8-button call-modal">Подробнее о компании</button>
 				</div>
 
 			</div>
 		</div>
 
 
-		<div class="block block-9">
+		<div class="block block-9" id="block-9">
 			<div class="wrap">
 				<div class="block-title-wrap">
 					<div class="block-title block-9-title">Автосервисы</div>
@@ -452,74 +452,194 @@
 						<div class="string">
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
 							<div class="cell block-9-cell">
-								<div class="block-9-address">
+								<div class="block-9-address block-9-address-close">
+									<div class="block-9-address-close-btn-wrap"></div>
+									<div class="block-9-address-img-wrap">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+										<img data-original="img/test2.jpg" alt="Autoservice" class="block-9-address-img lazy">
+									</div>
 									<div class="block-9-address-title">Автосервис на Юго-Западной</div>
 									<div class="block-9-address-descr">ул. Озерная, д.50, корп.1, стр.1</div>
 									<div class="block-9-address-time">Часы работы: 9:00 - 21:00</div>
-									<span class="write-link">Записаться</span>
+									<div class="block-9-address-hide">
+										<div class="string">
+											<div class="cell block-9-address-hide-cell-1">
+												<noindex><a href="tel:+74955555555">+7 (495) 555-55-55</a></noindex>
+											</div>
+											<div class="cell block-9-address-hide-cell-2">
+												<span class="write-link link-show call-modal">Записаться</span>
+											</div>
+										</div>
+									</div>
+									<span class="write-link call-modal">Записаться</span>
 								</div>
 							</div>
 
@@ -550,6 +670,29 @@
 					<p>Обычно восстановление проводится с помощью специализированных инструментов, поэтому отремонтировать своими руками АКПП будет крайне проблематично. Ведь далеко не у каждого автомобилиста в гараже имеется хотя бы подъемник для осуществления определенных манипуляций.</p>
 					<p>После того, как все неисправности и проблемы будут устранены, главное – правильно и качественно собрать коробку передач, а также проверить работоспособность. Тогда и только тогда вы будете уверены в том, что она еще долгое время будет исправна.</p>
 				</div>
+<!-- 
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th>Название услуги</th>
+							<th>Стоимость</th>
+							<th>Стоимость</th>
+							<th>Стоимость</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>	
+							<td class="img-cell"><img src="img/table-icon.png" alt=""></td>
+							<td data-label="Название услуги">Ремонт мехатроника</td>
+							<td data-label="Стоимость">1 000руб</td>
+							<td data-label="Стоимость">1 000руб</td>
+							<td data-label="Стоимость">1 000руб</td>
+							
+						</tr>
+					</tbody>
+				</table> -->
 
 				<div class="text clear">
 					<h4>переборка автоматической кпп</h4>
@@ -600,7 +743,7 @@
 							<div class="whatsapp">WhatsApp: <noindex><a href="whatsapp://send?phone=+74955555555">+7 (495) 555-55-55</a></noindex></div>
 							<div class="footer-call">Звоните, работаем без выходных!</div>
 							<div class="button-wrap">
-								<button class="button footer-button">Оставить заявку</button>
+								<button class="button footer-button call-modal">Оставить заявку</button>
 							</div>
 						</div>
 					</div>
@@ -625,10 +768,80 @@
 	</div>
 
 
+	<div class="images-modal"></div>
 
 
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<div class="modal mfp-hide" id="modal">
+		<div class="modal-wrap">
+			<div class="mfp-close"></div>
+			<div class="modal-title">Закажите звонок</div>
+			<div class="cell-wrap clear">
+
+				<div class="cell modal-cell">
+					<div class="modal-text">
+						<div class="modal-offer">Делая заказ прямо сейчас, <span class="nowrap">за Вами</span> закрепляется скидка 10%</div>
+						<div class="modal-info">
+							<div>Выезд мастера - бесплатный.</div>
+							<div>Приезд мастера - 45 минут.</div>
+						</div>
+					</div>	
+				</div>	
+
+				<div class="cell modal-cell">
+					<div class="modal-form-wrap">
+						<form action="#" class="modal-form">
+							<input type="hidden" name="project_name" value="Авторешение">
+							<input type="hidden" name="admin_email" value="test@gmail.com">
+							<input type="hidden" name="form_subject" value="Заказ звонка">
+
+							<input type="text" name="Имя" class="name-input" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{1,}" required autofocus>
+							<input type="tel" name="Телефон" class="tel" data-mask="+7(000)000-00-00" placeholder="Телефон" required>
+							<button type="submit" class="button modal-form-button modal-1-btn">Заказать звонок</button>
+						</form>
+					</div>
+				</div>	
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal modal-tel mfp-hide" id="modal-tel">
+		<div class="modal-wrap">
+			<div class="mfp-close"></div>
+
+			<div class="modal-text">Мы перезвоним Вам в течение <span class="nowrap">10 минут</span></div>
+
+			<div class="modal-form-wrap">
+				<form action="#" class="modal-form modal-form-tel">
+					<input type="hidden" name="project_name" value="Авторешение">
+					<input type="hidden" name="admin_email" value="test@gmail.com">
+					<input type="hidden" name="form_subject" value="Заказ звонка">
+
+					<input type="text" name="Имя" class="name-input" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{1,}" required autofocus>
+					<input type="tel" name="Телефон" class="tel" data-mask="+7(000)000-00-00" placeholder="Телефон" required>
+					<button type="submit" class="button modal-form-button modal-2-btn">Перезвоните мне</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="scroll-button" style="display: none;"></div>
+
+	<div class="call-modal-tel">
+		<div class="pulse">
+			<div class="cursor"></div>
+			<div class="phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
+		</div>
+	</div>
+
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+
+
 
 	<script src="js/scripts.js"></script>
 

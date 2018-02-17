@@ -26,6 +26,10 @@ var gulp           = require('gulp'),
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/slick-carousel/slick/slick.min.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'app/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
+		'app/libs/tuupola-jquery_lazyload-2cfbdb5/jquery.lazyload.min.js',
+		'app/js/copyright.min.js',
 		'app/js/common.js'
 		])
 	.pipe(concat('scripts.js'))
