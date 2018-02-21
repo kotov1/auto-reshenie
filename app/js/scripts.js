@@ -185,13 +185,22 @@ $(function() {
 				$('.images-modal').empty().removeClass('for-images-modal');
 				$.magnificPopup.close();
 			});
+			
 		}
 	});
 
-	$(document).mouseup(function (){
-		$('.images-modal').empty().removeClass('for-images-modal');
-		$.magnificPopup.close();
+
+	$(document).mouseup(function (e){
+		var div = $(".images-modal");
+		if ( (!div.is(e.target) && div.has(e.target).length === 0) && div.hasClass('for-images-modal') ) {
+
+			$('.images-modal').empty().removeClass('for-images-modal');
+			$.magnificPopup.close();
+
+		}
 	});
+
+
 
 
 
